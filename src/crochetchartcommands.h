@@ -21,7 +21,7 @@
 #ifndef CROCHETCHARTCOMMANDS_H
 #define CROCHETCHARTCOMMANDS_H
 
-#include <QUndoCommand>
+#include <QtWidgets/QUndoCommand>
 
 #include "cell.h"
 #include "ChartImage.h"

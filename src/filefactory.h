@@ -21,17 +21,17 @@
 #ifndef FILEFACTORY_H
 #define FILEFACTORY_H
 
-#include <qglobal.h>
+#include <QtCore/qglobal.h>
 
 #ifdef Q_WS_MAC
-#include <QXmlStreamReader>
-#include <QXmlStreamWriter>
+#include <QtCore/QXmlStreamReader>
+#include <QtCore/QXmlStreamWriter>
 #else
 class QXmlStreamReader;
 class QXmlStreamWriter;
 #endif //Q_WS_MAC
 
-#include <QTableWidget>
+#include <QtWidgets/QTableWidget>
 class MainWindow;
 
 class FileFactory

@@ -21,7 +21,7 @@
 #ifndef STITCHREPLACERUI_H
 #define STITCHREPLACERUI_H
 
-#include <QDialog>
+#include <QtWidgets/QDialog>
 
 class Scene;
 

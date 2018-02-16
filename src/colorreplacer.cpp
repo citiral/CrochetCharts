@@ -21,10 +21,10 @@
 #include "colorreplacer.h"
 #include "ui_colorreplacer.h"
 
-#include <QMessageBox>
-#include <QPushButton>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QPushButton>
 
-#include <QColorDialog>
+#include <QtWidgets/QColorDialog>
 
 #include "colorlistwidget.h"
 

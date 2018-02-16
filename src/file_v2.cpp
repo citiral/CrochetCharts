@@ -24,16 +24,18 @@
 
 #include "appinfo.h"
 
-#include <QFileInfo>
-#include <QTextDocument>
-#include <QDir>
+#include <QtCore/QFileInfo>
+#include <QtCore/QXmlStreamReader>
+#include <QtCore/QDir>
 
 #include "stitchlibrary.h"
 #include "mainwindow.h"
 #include "scene.h"
 #include "settings.h"
 #include "ChartItemTools.h"
-#include <QStack>
+#include <QtCore/QStack>
+
+#include <QtGui/QTextDocument>
 
 #include "crochettab.h"
 

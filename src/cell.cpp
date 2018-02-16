@@ -20,17 +20,17 @@
  \****************************************************************************/
 #include "cell.h"
 
-#include <QDebug>
-#include <qpainter.h>
-#include <qsvgrenderer.h>
+#include <QtCore/QDebug>
+#include <QtGui/qpainter.h>
+#include <QtSvg/qsvgrenderer.h>
 #include "stitchlibrary.h"
 #include "stitchset.h"
 #include "settings.h"
 #include "ChartItemTools.h"
-#include <QStyleOption>
-#include <QEvent>
+#include <QtWidgets/QStyleOption>
+#include <QtCore/QEvent>
 
-#include <QGraphicsScene>
+#include <QtWidgets/QGraphicsScene>
 
 Cell::Cell(QGraphicsItem *parent)
     : QGraphicsSvgItem(parent),

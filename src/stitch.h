@@ -21,11 +21,11 @@
 #ifndef STITCH_H
 #define STITCH_H
 
-#include <QString>
-#include <QList>
-#include <QObject>
-#include <QMap>
-#include <QColor>
+#include <QtCore/QString>
+#include <QtCore/QList>
+#include <QtCore/QObject>
+#include <QtCore/QMap>
+#include <QtGui/QColor>
 
 class QSvgRenderer;
 class QPixmap;

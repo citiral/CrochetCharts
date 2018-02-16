@@ -20,8 +20,8 @@
  \****************************************************************************/
 #include "debug.h"
 
-#include <QStringList>
-#include <QString>
+#include <QtCore/QStringList>
+#include <QtCore/QString>
 
 QString colorizeFunc(QString name)
 {

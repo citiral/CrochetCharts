@@ -20,8 +20,8 @@
  \****************************************************************************/
 #include "indicatorundo.h"
 
-#include <QDebug>
-#include <QObject>
+#include <QtCore/QDebug>
+#include <QtGui/QFileOpenEvent>
 
 #include "indicator.h"
 #include "scene.h"

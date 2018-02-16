@@ -21,16 +21,16 @@
 #include "exportui.h"
 #include "ui_export.h"
 
-#include <QDebug>
+#include <QtCore/QDebug>
 
 #include "settings.h"
 #include "math.h"
 
-#include <QMessageBox>
-#include <QFileDialog>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QFileDialog>
 
-#include <QPrinter> //for pdf
-#include <QSvgGenerator> //for svg
+#include <QtPrintSupport/QPrinter> //for pdf
+#include <QtSvg/QSvgGenerator> //for svg
 
 #include "crochettab.h"
 #include "scene.h" // for to connect the scene to the view.

@@ -21,9 +21,9 @@
 #ifndef PROPERTIESDATA_H
 #define PROPERTIESDATA_H
 
-#include <QString>
-#include <QColor>
-#include <QPointF>
+#include <QtCore/QString>
+#include <QtGui/QColor>
+#include <QtCore/QPointF>
 
 class PropertiesData
 {

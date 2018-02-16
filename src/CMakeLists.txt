@@ -8,8 +8,8 @@ set(crochet_resources
     ../stitches/stitches.qrc
     )
 
-qt4_add_resources(crochet_rcc_srcs ${crochet_resources})
-qt4_wrap_ui(crochet_ui_h ${crochet_uis})
+qt5_add_resources(crochet_rcc_srcs ${crochet_resources})
+qt5_wrap_ui(crochet_ui_h ${crochet_uis})
 
 if(WIN32)
     #generate the embeded icon for the exe file.
@@ -42,7 +42,12 @@ else()
             ${crochet_version} ${crochet_win} ${crochet_mac} ${crochet_nix})
 endif()
 
-target_link_libraries(${EXE_NAME} ${QT_LIBRARIES})
+target_link_libraries(
+	${EXE_NAME}
+	${QT_LIBRARIES}
+)
+
+QT5_USE_MODULES(${EXE_NAME} Widgets PrintSupport Svg Network)
 
 if(APPLE)
     #install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME} DESTINATION ../MacOS)

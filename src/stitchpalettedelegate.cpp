@@ -21,13 +21,13 @@
 #include "stitchpalettedelegate.h"
 
 #include "stitch.h"
-#include <QPainter>
-#include <QPixmap>
+#include <QtGui/QPainter>
+#include <QtGui/QPixmap>
 
-#include <QDebug>
-#include <QSvgRenderer>
+#include <QtCore/QDebug>
+#include <QtSvg/QSvgRenderer>
 
-#include <QSortFilterProxyModel>
+#include <QtCore/QSortFilterProxyModel>
 
 StitchPaletteDelegate::StitchPaletteDelegate(QWidget* parent)
     : QStyledItemDelegate(parent)

@@ -21,9 +21,9 @@
 #ifndef INDICATOR_H
 #define INDICATOR_H
 
-#include <QGraphicsTextItem>
+#include <QtWidgets/QGraphicsTextItem>
 
-#include <QLineEdit>
+#include <QtWidgets/QLineEdit>
 
 class QFocusEvent;
 class QGraphicsItem;

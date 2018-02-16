@@ -24,7 +24,7 @@
 #include "filefactory.h"
 #include "mainwindow.h"
 #include "stitchset.h"
-#include <QTabWidget>
+#include <QtWidgets/QTabWidget>
 
 class File
 {

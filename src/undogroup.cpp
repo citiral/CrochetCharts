@@ -19,9 +19,9 @@
 
  \****************************************************************************/
 #include "undogroup.h"
-#include <QUndoStack>
+#include <QtWidgets/QUndoStack>
 
-#include <QDebug>
+#include <QtCore/QDebug>
 
 UndoGroup::UndoGroup(QObject* parent)
     : QUndoGroup(parent)

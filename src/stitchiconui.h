@@ -21,10 +21,10 @@
 #ifndef STITCHICONUI_H
 #define STITCHICONUI_H
 
-#include <QDialog>
+#include <QtWidgets/QDialog>
 #include "ui_stitchicon.h"
 
-#include <QDebug>
+#include <QtCore/QDebug>
 
 namespace Ui {
     class StitchIconDialog;

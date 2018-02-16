@@ -21,7 +21,7 @@
 #include "application.h"
 
 #include "appinfo.h"
-#include <QFileOpenEvent>
+#include <QtGui/QFileOpenEvent>
 
 #include "stitchlibrary.h"
 

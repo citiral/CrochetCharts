@@ -21,7 +21,7 @@
 #ifndef COLORLISTWIDGET_H
 #define COLORLISTWIDGET_H
 
-#include <QListWidget>
+#include <QtWidgets/QListWidget>
 
 class ColorListWidget : public QListWidget
 {

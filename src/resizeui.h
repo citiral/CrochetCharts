@@ -21,10 +21,10 @@
 #ifndef RESIZEUI_H
 #define RESIZEUI_H
 
-#include <QDockWidget>
-#include <QTabWidget>
-#include <QGraphicsScene>
-#include <QMap>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QGraphicsScene>
+#include <QtCore/QMap>
 
 namespace Ui {
     class ResizeDialog;

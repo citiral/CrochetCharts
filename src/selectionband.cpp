@@ -1,10 +1,10 @@
 #include "selectionband.h"
-#include <QGraphicsPathItem>
-#include <QGraphicsRectItem>
-#include <QPainter>
-#include <QBrush>
+#include <QtWidgets/QGraphicsPathItem>
+#include <QtWidgets/QGraphicsRectItem>
+#include <QtGui/QPainter>
+#include <QtGui/QBrush>
 #include <cmath>
-#include <QApplication>
+#include <QtWidgets/QApplication>
 
 /************************************************\ 
 *  AbstractSelectionBand                         * 
@@ -160,8 +160,8 @@ void LassoBand::updatePath()
 	newr = newr.normalized();
 	
 	//expand our size rectangle to contain newr
-	mMaxGeom = mMaxGeom.unite(newr).normalized();
-	
+	mMaxGeom = mMaxGeom.united(newr).normalized();
+
 	//set the geometry to that rectangle, translated to our position
 	setGeometry(mMaxGeom.translated(mPosition.x(), mPosition.y()).normalized());
 	
@@ -243,8 +243,8 @@ void LineBand::updatePath()
 	newr = newr.normalized();
 	
 	//expand our size rectangle to contain newr
-	mMaxGeom = mMaxGeom.unite(newr).normalized();
-	
+	mMaxGeom = mMaxGeom.united(newr).normalized();
+
 	//set the geometry to that rectangle, translated to our position
 	setGeometry(mMaxGeom.translated(mPosition.x(), mPosition.y()).normalized());
 	

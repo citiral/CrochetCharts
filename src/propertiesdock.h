@@ -21,8 +21,8 @@
 #ifndef PROPERTIESDOCK_H
 #define PROPERTIESDOCK_H
 
-#include <QDockWidget>
-#include <QTabWidget>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QTabWidget>
 #include "scene.h"
 
 #include "debug.h"

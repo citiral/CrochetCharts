@@ -21,7 +21,7 @@
 #ifndef DEBUG_H
 #define DEBUG_H
 
-#include <QDebug>
+#include <QtCore/QDebug>
 
 /*
     black="\033[30m";

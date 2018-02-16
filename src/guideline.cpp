@@ -20,11 +20,12 @@
  \****************************************************************************/
 #include "guideline.h"
 
-#include <QDebug>
-#include <QGraphicsSceneMouseEvent>
+#include <QtCore/QDebug>
+#include <QtWidgets/QGraphicsSceneMouseEvent>
 
 Guideline::Guideline(const QRectF &rect, QGraphicsItem *parent, QGraphicsScene *scene) :
-    QGraphicsEllipseItem(rect, parent, scene)
+    // QGraphicsEllipseItem(rect, parent, scene)
+    QGraphicsEllipseItem(rect, parent)
 {
     setAcceptedMouseButtons(0);
 }

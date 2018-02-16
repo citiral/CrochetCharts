@@ -21,7 +21,7 @@
 #ifndef VERSION_H
 #define VERSION_H
 
-#include <QString>
+#include <QtCore/QString>
 
 #ifdef USING_QMAKE
 #else

@@ -21,7 +21,7 @@
 #ifndef COLORREPLACER_H
 #define COLORREPLACER_H
 
-#include <QDialog>
+#include <QtWidgets/QDialog>
 
 namespace Ui {
 class ColorReplacer;

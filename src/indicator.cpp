@@ -20,24 +20,25 @@
  \****************************************************************************/
 #include "indicator.h"
 
-#include <QDebug>
+#include <QtCore/QDebug>
 
-#include <QPainter>
+#include <QtGui/QPainter>
 #include "settings.h"
-#include <QStyleOption>
-#include <QKeyEvent>
-#include <QGraphicsSceneEvent>
-#include <QTextCursor>
-#include <QTextDocument>
-#include <QTextBlock>
-#include <QAbstractTextDocumentLayout>
-#include <QTextLayout>
+#include <QtWidgets/QStyleOption>
+#include <QtGui/QKeyEvent>
+#include <QtWidgets/QGraphicsSceneEvent>
+#include <QtGui/QTextCursor>
+#include <QtCore/QXmlStreamReader>
+#include <QtGui/QTextBlock>
+#include <QtGui/QAbstractTextDocumentLayout>
+#include <QtGui/QTextLayout>
 #include "scene.h"
 #include "crochetchartcommands.h"
 #include "ChartItemTools.h"
 
 Indicator::Indicator(QGraphicsItem* parent, QGraphicsScene* scene)
-    : QGraphicsTextItem(parent, scene),
+    //: QGraphicsTextItem(parent, scene),
+    : QGraphicsTextItem(parent),
       highlight(false)
 {
     setFlag(QGraphicsItem::ItemIsMovable);

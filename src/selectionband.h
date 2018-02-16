@@ -1,8 +1,8 @@
 #ifndef SELECTIONBAND_H
 #define SELECTIONBAND_H
 
-#include <QWidget>
-#include <QPainterPath>
+#include <QtWidgets/QWidget>
+#include <QtGui/QPainterPath>
 
 class AbstractSelectionBand : public QWidget
 {

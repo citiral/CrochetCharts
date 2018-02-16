@@ -20,12 +20,12 @@
  \****************************************************************************/
 #include "stitchiconui.h"
 #include "settings.h"
-#include <QDir>
-#include <QFileDialog>
-#include <QMessageBox>
+#include <QtCore/QDir>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QMessageBox>
 
-#include <QUrl>
-#include <QDesktopServices>
+#include <QtCore/QUrl>
+#include <QtGui/QDesktopServices>
 
 #include "stitchlibrary.h"
 

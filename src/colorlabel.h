@@ -21,7 +21,7 @@
 #ifndef COLORLABEL_H
 #define COLORLABEL_H
 
-#include <QLabel>
+#include <QtWidgets/QLabel>
 
 class ColorLabel : public QLabel
 {

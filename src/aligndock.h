@@ -21,7 +21,7 @@
 #ifndef ALIGNDOCK_H
 #define ALIGNDOCK_H
 
-#include <QDockWidget>
+#include <QtWidgets/QDockWidget>
 
 namespace Ui {
     class AlignDock;

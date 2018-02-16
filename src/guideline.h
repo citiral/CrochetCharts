@@ -21,7 +21,7 @@
 #ifndef GUIDELINE_H
 #define GUIDELINE_H
 
-#include <QGraphicsEllipseItem>
+#include <QtWidgets/QGraphicsEllipseItem>
 
 class Guideline : public QGraphicsEllipseItem
 {

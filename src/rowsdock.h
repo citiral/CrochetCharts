@@ -21,8 +21,8 @@
 #ifndef ROWSDOCK_H
 #define ROWSDOCK_H
 
-#include <QDockWidget>
-#include <QButtonGroup>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QButtonGroup>
 
 namespace Ui {
     class RowsDock;

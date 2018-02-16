@@ -46,7 +46,11 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/version.cpp.in
                 ${CMAKE_CURRENT_BINARY_DIR}/version.cpp)
 set(crochet_version "${CMAKE_CURRENT_BINARY_DIR}/version.cpp")
 
-find_package(Qt4 REQUIRED)
+set(QTDIR /usr/local/opt/qt5)
+set(CMAKE_PREFIX_PATH ${QTDIR})
+SET(CMAKE_AUTOMOC ON)
+SET(CMAKE_INCLUDE_CURRENT_DIR ON)
+find_package(Qt5Widgets REQUIRED)
 
 add_definitions(${QT_DEFINITIONS})
 
@@ -65,7 +69,7 @@ message(STATUS "Build flags: ${CMAKE_CXX_FLAGS}")
 message(STATUS "Linker flags: ${CMAKE_EXE_LINKER_FLAGS}")
 message("-------------------------------------------------------")
 
-include_directories(${QT_INCLUDES} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(${QT_INCLUDES} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR} /usr/local/opt/qt5/include)
 
 #More info see: http://cmake.org/cmake/help/cmake2.6docs.html#module:FindQt4
 if(WIN32)
@@ -75,7 +79,7 @@ endif()
 set(QT_USE_QTSVG true)
 #set(QT_USE_QTOPENGL true)
 set(QT_USE_QTNETWORK true)
-include(${QT_USE_FILE})
+#include(${QT_USE_FILE})
 
 #QT4_CREATE_TRANSLATION( qm_files directories ... sources ... ts_files ... OPTIONS ...)
 #QT4_ADD_TRANSLATION( qm_files ts_files ... )

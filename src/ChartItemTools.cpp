@@ -1,8 +1,8 @@
 #include "ChartItemTools.h"
 #include <cmath>
-#include <QList>
-#include <QTransform>
-#include <QVector2D>
+#include <QtCore/QList>
+#include <QtGui/QTransform>
+#include <QtGui/QVector2D>
 
 #define ROTATION_MATRIX_INDEX 	0
 #define SCALE_MATRIX_INDEX 		1

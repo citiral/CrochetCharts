@@ -20,11 +20,11 @@
  \****************************************************************************/
 #include "splashscreen.h"
 
-#include <QPainter>
-#include <QBitmap>
+#include <QtGui/QPainter>
+#include <QtGui/QBitmap>
 #include "appinfo.h"
 
-#include <QDebug>
+#include <QtCore/QDebug>
 
 SplashScreen::SplashScreen()
 {
