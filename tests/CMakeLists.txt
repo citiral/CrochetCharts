@@ -6,7 +6,7 @@ set(QT_USE_QTTEST true)
 
 set(CMAKE_AUTOMOC true)
 
-include(${QT_USE_FILE})
+#include(${QT_USE_FILE})
 
 file(GLOB crochet_test_srcs "test*.cpp")
 file(GLOB crochet_test_qobject_headers "test*.h")
@@ -55,6 +55,11 @@ set(crochet_app_cpp
     ../src/settings.cpp        
     ../src/stitchlibrarydelegate.cpp  
     ../src/undogroup.cpp
+    ../src/ChartImage.cpp
+    ../src/chartLayer.cpp
+    ../src/ChartItemTools.cpp
+    ../src/selectionband.cpp
+    ../src/resizeui.cpp
     ${CMAKE_BINARY_DIR}/version.cpp )
 
 
@@ -66,9 +71,11 @@ set(crochet_app_resources
     ../stitches/stitches.qrc
     )
 
-qt4_add_resources(crochet_app_rcc_srcs ${crochet_app_resources})
+qt5_add_resources(crochet_app_rcc_srcs ${crochet_app_resources})
 #qt4_wrap_cpp(crochet_test_moc_srcs ${crochet_test_qobject_headers} ${crochet_app_h})
-qt4_wrap_ui(crochet_ui_h ${crochet_ui})
+qt5_wrap_ui(crochet_ui_h ${crochet_ui})
 
 add_executable(tests main.cpp ${crochet_test_srcs} ${crochet_test_moc_srcs} ${crochet_app_rcc_srcs} ${crochet_app_cpp} ${crochet_ui_h})
+QT5_USE_MODULES(tests Widgets PrintSupport Svg Network Test)
+
 target_link_libraries(tests ${QT_LIBRARIES})

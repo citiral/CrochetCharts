@@ -25,6 +25,9 @@
 #include "testtextview.h"
 #include "teststitchlibrary.h"
 
+#include <QtCore/QDebug>
+#include <QtWidgets/qapplication.h>
+
 int main(int argc, char** argv) 
 {
 

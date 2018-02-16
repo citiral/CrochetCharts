@@ -22,8 +22,7 @@
 #define TESTTEXTVIEW_H
 
 #include <QtTest/QTest>
-#include <QDebug>
-#include <QObject>
+#include <QtCore/QObject>
 
 #include "../src/scene.h"
 

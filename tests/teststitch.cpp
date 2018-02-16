@@ -20,14 +20,13 @@
  \****************************************************************************/
 #include "teststitch.h"
 
-#include <QPainter>
-#include <QPixmap>
+#include <QtGui/QPainter>
+#include <QtGui/QPixmap>
 #include <QtSvg/QSvgRenderer>
 #include <QtSvg/QSvgGenerator>
 
-#include <QFile>
-#include <QCryptographicHash>
-#include <QDebug>
+#include <QtCore/QFile>
+#include <QtCore/QCryptographicHash>
 
 void TestStitch::initTestCase()
 {
@@ -153,14 +152,14 @@ void TestStitch::stitchRender_data()
     QTest::addColumn<QString>("svgHash2");
 
     QTest::newRow("ch")     << "ch" << "../stitches/ch.svg" << 32.0 << 16.0
-                            << "7343fe7fcfeb2cb816fab4276661c7c1e0348273"
-                            << "2d34ba1749449edcee1709e6575cc60e1611e217"
-                            << "78de9a725ebb724c4d5d7c66e6aeba520d9e4893";
+                            << "dbfacd18635fef7df41086eeccdc37447760a0ed"
+                            << "6a17fde341600ab3557f14c78d4257c3fe4e4cf8"
+                            << "6a17fde341600ab3557f14c78d4257c3fe4e4cf8";
 
     QTest::newRow("hdc")    << "hdc" << "../stitches/hdc.svg" << 32.0 << 64.0
-                            << "e5a21b7e5a181d0f9f45a62334e67a32188c39c7"
-                            << "4ad0f54e07e0c1ad960021689707658fbe9938ca"
-                            << "dc1719c340182c8d0194f832a2a3e33e855176c4";
+                            << "243998c731f4a7f7db339d8792585e76b53c2f45"
+                            << "25ec306ceb1a8b3cefc4d861466ea2f3bad94abe"
+                            << "25ec306ceb1a8b3cefc4d861466ea2f3bad94abe";
 //TODO: render other stitches esp tall and wide stitches.
 }
 

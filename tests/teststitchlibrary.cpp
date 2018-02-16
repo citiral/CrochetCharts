@@ -21,8 +21,6 @@
 #include "teststitchlibrary.h"
 #include "../src/stitchset.h"
 
-#include <QDebug>
-
 void TestStitchLibrary::initTestCase()
 {
     StitchLibrary::inst()->loadStitchSets();
@@ -72,7 +70,7 @@ void TestStitchLibrary::findStitch_data()
     QTest::newRow("hdc") << "hdc" << true << ":/stitches/hdc.svg" << "half double crochet" << "Default" << "hdc";
     QTest::newRow("5-dc shell") << "5-dc shell" << true << ":/stitches/5dc_shell.svg"
                                     << "5 double crochet shell" << "Default" << "5-dc shell";
-    QTest::newRow("stitch dne") << "bcm" << false << "" << "" << "" << "";
+    QTest::newRow("stitch dne") << "bcm" << false << ":/stitches/unknown.svg" << "" << "" << "";
 
 }
 

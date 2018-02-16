@@ -22,11 +22,10 @@
 #define TESTCELL_H
 
 #include <QtTest/QTest>
-#include <QDebug>
-#include <QObject>
+#include <QtCore/QObject>
 
-#include <QGraphicsView>
-#include <QGraphicsScene>
+#include <QtWidgets/QGraphicsView>
+#include <QtWidgets/QGraphicsScene>
 
 #include "../src/cell.h"
 

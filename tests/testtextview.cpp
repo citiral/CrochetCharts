@@ -21,6 +21,8 @@
 #include "testtextview.h"
 #include "../src/stitchlibrary.h"
 
+#include <QtCore/QDebug>
+
 void TestTextView::initTestCase()
 {
     
@@ -79,7 +81,11 @@ void TestTextView::testGenerateTextRow_data()
      QTest::addColumn<QString>("repeatOutput");
      QTest::addColumn<QString>("cleanRepeat");
      
-     QTest::newRow("row 1") << 1 << "" << "" << "" << "";
+     QTest::newRow("row 1") << 1
+                            << "ch 1, twisted sc 1, tr 1, hdc3tog 1, ch 1, tr 1, hdc2tog 1, twisted sc 1, tr 1"
+                            << "Ch 1, twisted sc 1, tr 1, hdc3tog 1, ch 1, tr 1, hdc2tog 1, twisted sc 1, tr 1."
+                            << "ch 1, twisted sc 1, tr 1, hdc3tog 1, ch 1, tr 1, hdc2tog 1, twisted sc 1, tr 1"
+                            << "Ch 1, twisted sc 1, tr 1, hdc3tog 1, ch 1, tr 1, hdc2tog 1, twisted sc 1, tr 1.";
 
 }
 

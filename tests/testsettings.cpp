@@ -20,6 +20,8 @@
  \****************************************************************************/
 #include "testsettings.h"
 
+#include <QtCore/QDebug>
+
 void TestSettings::initTestCase()
 {
     qDebug() << Settings::inst()->fileName();
@@ -43,6 +45,9 @@ void TestSettings::setSettings()
 
     QVERIFY(test2 == value2);
 
+    // reset
+    Settings::inst()->setValue(key, value);
+
 }
 
 void TestSettings::setSettings_data()
@@ -51,9 +56,9 @@ void TestSettings::setSettings_data()
     QTest::addColumn<QVariant>("value");
     QTest::addColumn<QVariant>("value2");
 
-    QTest::newRow("check for updates") << "checkForUpdates" << QVariant(true) << QVariant(false);
-    QTest::newRow("max files") << "maxRecentFiles" << QVariant(5) << QVariant(10);
-    QTest::newRow("default stitch") << "defaultStitch" << QVariant("ch") << QVariant("dc");
+    QTest::newRow("check for updates") << "checkForUpdates" << QVariant(false) << QVariant(true);
+    QTest::newRow("max files") << "maxRecentFiles" << QVariant(10) << QVariant(5);
+    QTest::newRow("default stitch") << "defaultStitch" << QVariant("dc") << QVariant("ch");
 
 }
 
