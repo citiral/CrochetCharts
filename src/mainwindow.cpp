@@ -606,8 +606,7 @@ void MainWindow::setupMenus()
     connect(ui->menuTools, SIGNAL(aboutToShow()), SLOT(menuToolsAboutToShow()));
     connect(ui->actionOptions, SIGNAL(triggered()), SLOT(toolsOptions()));
     connect(ui->actionStitchLibrary, SIGNAL(triggered()), SLOT(toolsStitchLibrary()));
-    connect(ui->actionCheckForUpdates, SIGNAL(triggered()), SLOT(toolsCheckForUpdates()));
-    
+    //connect(ui->actionCheckForUpdates, SIGNAL(triggered()), SLOT(toolsCheckForUpdates()));
 #ifdef APPLE_APP_STORE
     ui->actionCheckForUpdates->setVisible(false);
 #endif

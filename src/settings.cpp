@@ -90,7 +90,7 @@ void Settings::setupValueList() {
     QString userDocs = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
 
     //general application options
-    mValueList["checkForUpdates"] = QVariant(true);
+    mValueList["checkForUpdates"] = QVariant(false);
     mValueList["fileLocation"] = QVariant(userDocs);
 
     mValueList["maxRecentFiles"] = QVariant(5);
