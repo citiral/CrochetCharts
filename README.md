@@ -12,7 +12,7 @@ You will need to install the following software:
 
 All Platforms
 --------------
-+ Qt4.8
++ Qt5.10
 + cmake
 + docbook
 + docbook-xsl-ns
