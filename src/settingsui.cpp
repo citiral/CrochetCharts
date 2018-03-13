@@ -21,12 +21,12 @@
 #include "settingsui.h"
 #include "ui_settings.h"
 
-#include <QDebug>
-#include <QFileDialog>
+#include <QtCore/QDebug>
+#include <QtWidgets/QFileDialog>
 
 #include "settings.h"
-#include <QPainter>
-#include <QColorDialog>
+#include <QtGui/QPainter>
+#include <QtWidgets/QColorDialog>
 #include "stitchlibrary.h"
 
 

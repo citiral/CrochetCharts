@@ -21,14 +21,14 @@
 #ifndef INDICATORUNDO_H
 #define INDICATORUNDO_H
 
-#include <QUndoCommand>
+#include <QtWidgets/QUndoCommand>
 
 class Indicator;
 class Scene;
 
-#include <QPointF>
-#include <QString>
-#include <QColor>
+#include <QtCore/QPointF>
+#include <QtCore/QString>
+#include <QtGui/QColor>
 
 class AddIndicator : public QUndoCommand
 {

@@ -21,7 +21,7 @@
 #ifndef UNDOGROUP_H
 #define UNDOGROUP_H
 
-#include <QUndoGroup>
+#include <QtWidgets/QUndoGroup>
 
 class UndoGroup : public QUndoGroup
 {

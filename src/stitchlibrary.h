@@ -21,9 +21,9 @@
 #ifndef STITCHLIBRARY_H
 #define STITCHLIBRARY_H
 
-#include <QObject>
-#include <QStringList>
-#include <QMap>
+#include <QtGui/QFileOpenEvent>
+#include <QtCore/QStringList>
+#include <QtCore/QMap>
 
 class StitchSet;
 class Stitch;

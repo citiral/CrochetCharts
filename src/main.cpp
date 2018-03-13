@@ -19,11 +19,9 @@
 
  \****************************************************************************/
 #include "application.h"
-#include "mainwindow.h"
 #include "appinfo.h"
 
-#include <QDebug>
-#include <QDir>
+#include <QtCore/QDir>
 
 #include "settings.h"
 
@@ -34,7 +32,7 @@
 
 int main(int argc, char *argv[])
 {
-    qInstallMsgHandler(errorHandler);
+    qInstallMessageHandler(errorHandler);
     Application a(argc, argv);
 
     QStringList arguments = QCoreApplication::arguments();

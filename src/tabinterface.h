@@ -21,8 +21,8 @@
 #ifndef TABINTERFACE_H
 #define TABINTERFACE_H
 
-#include <QWidget>
-#include <QMap>
+#include <QtWidgets/QWidget>
+#include <QtCore/QMap>
 
 class QGraphicsView;
 class QGraphicsScene;

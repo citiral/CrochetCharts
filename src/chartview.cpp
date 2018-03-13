@@ -20,10 +20,10 @@
  \****************************************************************************/
 #include "chartview.h"
 
-#include <QWheelEvent>
-#include <QDebug>
-#include <QScrollBar>
-#include <QGLWidget>
+#include <QtGui/QWheelEvent>
+#include <QtCore/QDebug>
+#include <QtWidgets/QScrollBar>
+#include <QtOpenGL/QGLWidget>
 
 ChartView::ChartView(QWidget* parent)
     : QGraphicsView(parent)

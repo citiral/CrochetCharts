@@ -21,11 +21,11 @@
 #ifndef CROCHETTAB_H
 #define CROCHETTAB_H
 
-#include <QWidget>
-#include <QMap>
+#include <QtWidgets/QWidget>
+#include <QtCore/QMap>
 
 #include "chartview.h"
-#include <QPointer>
+#include <QtCore/QPointer>
 
 #include "scene.h"
 

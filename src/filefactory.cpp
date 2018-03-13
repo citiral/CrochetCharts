@@ -22,18 +22,18 @@
 #include "file_v1.h"
 #include "file_v2.h"
 
-#include <QObject>
+#include <QtGui/QFileOpenEvent>
 
 #include "debug.h"
 
-#include <QFile>
-#include <QFileInfo>
-#include <QDir>
-#include <QDataStream>
-#include <QXmlStreamReader>
-#include <QXmlStreamWriter>
+#include <QtCore/QFile>
+#include <QtCore/QFileInfo>
+#include <QtCore/QDir>
+#include <QtCore/QDataStream>
+#include <QtCore/QXmlStreamReader>
+#include <QtCore/QXmlStreamWriter>
 
-#include <QTemporaryFile>
+#include <QtCore/QTemporaryFile>
 
 #include "crochettab.h"
 

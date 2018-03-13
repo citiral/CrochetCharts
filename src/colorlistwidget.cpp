@@ -20,13 +20,13 @@
  \****************************************************************************/
 #include "colorlistwidget.h"
 
-#include <QDrag>
-#include <QMimeData>
-#include <QMouseEvent>
-#include <QApplication>
-#include <QPainter>
+#include <QtGui/QDrag>
+#include <QtCore/QMimeData>
+#include <QtGui/QMouseEvent>
+#include <QtWidgets/QApplication>
+#include <QtGui/QPainter>
 
-#include <QDebug>
+#include <QtCore/QDebug>
 
 ColorListWidget::ColorListWidget(QWidget *parent) :
     QListWidget(parent),

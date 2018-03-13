@@ -21,14 +21,14 @@
 #ifndef STITCHSET_H
 #define STITCHSET_H
 
-#include <QList>
-#include <QAbstractItemModel>
+#include <QtCore/QList>
+#include <QtCore/QAbstractItemModel>
 #include "stitch.h"
 
 class QDomElement;
 #ifdef Q_WS_MAC
-#include <QXmlStreamWriter>
-#include <QXmlStreamReader>
+#include <QtCore/QXmlStreamWriter>
+#include <QtCore/QXmlStreamReader>
 #else
 class QXmlStreamWriter;
 class QXmlStreamReader;

@@ -21,7 +21,7 @@
 #ifndef STITCHPALETTEDELEGATE_H
 #define STITCHPALETTEDELEGATE_H
 
-#include <QStyledItemDelegate>
+#include <QtWidgets/QStyledItemDelegate>
 
 class StitchPaletteDelegate : public QStyledItemDelegate
 {

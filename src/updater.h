@@ -21,12 +21,12 @@
 #ifndef UPDATER_H
 #define UPDATER_H
 
-#include <QWidget>
-#include <QNetworkReply>
-#include <QNetworkAccessManager>
-#include <QUrl>
+#include <QtWidgets/QWidget>
+#include <QtNetwork/QNetworkReply>
+#include <QtNetwork/QNetworkAccessManager>
+#include <QtCore/QUrl>
 
-#include <QProgressDialog>
+#include <QtWidgets/QProgressDialog>
 
 class QFile;
 

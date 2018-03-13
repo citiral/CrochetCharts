@@ -1,11 +1,11 @@
 #ifndef CHARTIMAGE_H
 #define CHARTIMAGE_H
 
-#include <QGraphicsPixmapItem>
-#include <QPixmap>
-#include <QPainter>
-#include <QStyleOptionGraphicsItem>
-#include <QDataStream>
+#include <QtWidgets/QGraphicsPixmapItem>
+#include <QtGui/QPixmap>
+#include <QtGui/QPainter>
+#include <QtWidgets/QStyleOptionGraphicsItem>
+#include <QtCore/QDataStream>
 
 class ChartImage : public QGraphicsObject
 {

@@ -21,8 +21,8 @@
 #ifndef LEGENDS_H
 #define LEGENDS_H
 
-#include <QGraphicsWidget>
-#include <QMap>
+#include <QtWidgets/QGraphicsWidget>
+#include <QtCore/QMap>
 
 namespace Legend {
     const int margin = 5;

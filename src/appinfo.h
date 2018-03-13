@@ -22,9 +22,9 @@ along with Crochet Charts. If not, see <http://www.gnu.org/licenses/>.
 #define APPINFO_H
 
 #include "version.h"
-#include <QString>
-#include <QRegExp>
-#include <qobject.h>
+#include <QtCore/QString>
+#include <QtCore/QRegExp>
+#include <QtCore/qobject.h>
 
 /**
  * singleton class to supply general application-wide info to all classes.

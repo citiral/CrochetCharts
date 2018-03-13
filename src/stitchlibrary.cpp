@@ -23,13 +23,13 @@
 #include "stitchset.h"
 #include "stitch.h"
 
-#include <QFile>
+#include <QtCore/QFile>
 
-#include <QDebug>
+#include <QtCore/QDebug>
 #include "debug.h"
 
-#include <QDir>
-#include <QFileInfo>
+#include <QtCore/QDir>
+#include <QtCore/QFileInfo>
 #include "settings.h"
 
 // Global static pointer

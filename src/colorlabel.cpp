@@ -20,14 +20,14 @@
  \****************************************************************************/
 #include "colorlabel.h"
 
-#include <QPainter>
-#include <QDebug>
+#include <QtGui/QPainter>
+#include <QtCore/QDebug>
 
-#include <QColorDialog>
-#include <QPaintEvent>
-#include <QMimeData>
+#include <QtWidgets/QColorDialog>
+#include <QtGui/QPaintEvent>
+#include <QtCore/QMimeData>
 
-#include <QCommonStyle>
+#include <QtWidgets/QCommonStyle>
 
 ColorLabel::ColorLabel(QWidget *parent) :
     QLabel(parent),

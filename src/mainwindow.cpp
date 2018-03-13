@@ -38,26 +38,28 @@
 #include "colorreplacer.h"
 
 #include "debug.h"
-#include <QDialog>
-#include <QMessageBox>
-#include <QFileDialog>
-#include <QInputDialog>
-#include <QColorDialog>
-#include <QStandardItemModel>
-#include <QStandardItem>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QInputDialog>
+#include <QtWidgets/QColorDialog>
+#include <QtGui/QStandardItemModel>
+#include <QtGui/QStandardItem>
 
-#include <QPrinter>
-#include <QPrintDialog>
-#include <QPrintPreviewDialog>
+#include <QtPrintSupport/QPrinter>
+#include <QtPrintSupport/QPrintDialog>
+#include <QtPrintSupport/QPrintPreviewDialog>
 
-#include <QActionGroup>
-#include <QCloseEvent>
-#include <QUndoStack>
-#include <QUndoView>
-#include <QTimer>
+#include <QtWidgets/QActionGroup>
+#include <QtGui/QCloseEvent>
+#include <QtWidgets/QUndoStack>
+#include <QtWidgets/QUndoView>
+#include <QtCore/QTimer>
 
-#include <QSortFilterProxyModel>
-#include <QDesktopServices>
+#include <QtCore/QSortFilterProxyModel>
+#include <QtGui/QDesktopServices>
+
+#include <QtCore/QMimeData>
 
 MainWindow::MainWindow(QStringList fileNames, QWidget* parent)
     : QMainWindow(parent),
@@ -604,11 +606,8 @@ void MainWindow::setupMenus()
     connect(ui->menuTools, SIGNAL(aboutToShow()), SLOT(menuToolsAboutToShow()));
     connect(ui->actionOptions, SIGNAL(triggered()), SLOT(toolsOptions()));
     connect(ui->actionStitchLibrary, SIGNAL(triggered()), SLOT(toolsStitchLibrary()));
-    connect(ui->actionCheckForUpdates, SIGNAL(triggered()), SLOT(toolsCheckForUpdates()));
-    
-#ifdef APPLE_APP_STORE
+    //connect(ui->actionCheckForUpdates, SIGNAL(triggered()), SLOT(toolsCheckForUpdates()));
     ui->actionCheckForUpdates->setVisible(false);
-#endif
 
     //Help Menu
     connect(ui->actionAbout, SIGNAL(triggered()), SLOT(helpAbout()));

@@ -24,15 +24,17 @@
 
 #include "appinfo.h"
 
-#include <QTextDocument>
-#include <QFileInfo>
-#include <QDir>
+#include <QtCore/QXmlStreamReader>
+#include <QtCore/QFileInfo>
+#include <QtCore/QDir>
 
-#include <QDataStream>
-#include <QXmlStreamReader>
-#include <QXmlStreamWriter>
+#include <QtCore/QDataStream>
+#include <QtCore/QXmlStreamReader>
+#include <QtCore/QXmlStreamWriter>
 
-#include <QStringList>
+#include <QtCore/QStringList>
+
+#include <QtGui/QTextDocument>
 
 #include "stitchlibrary.h"
 #include "mainwindow.h"

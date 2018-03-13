@@ -21,7 +21,7 @@
 #ifndef MIRRORDOCK_H
 #define MIRRORDOCK_H
 
-#include <QDockWidget>
+#include <QtWidgets/QDockWidget>
 
 namespace Ui {
     class MirrorDock;

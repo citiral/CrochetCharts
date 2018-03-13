@@ -25,18 +25,18 @@
 #include "stitchlibrarydelegate.h"
 
 #include "debug.h"
-#include <QMessageBox>
-#include <QInputDialog>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QInputDialog>
 
-#include <QPrinter>
-#include <QPrintDialog>
-#include <QPainter>
-#include <QSortFilterProxyModel>
+#include <QtPrintSupport/QPrinter>
+#include <QtPrintSupport/QPrintDialog>
+#include <QtGui/QPainter>
+#include <QtCore/QSortFilterProxyModel>
 
 #include "settings.h"
 
 #include "stitchiconui.h"
-#include <QFileDialog>
+#include <QtWidgets/QFileDialog>
 
 //TODO: make the msgboxes reusbale functions.
 
@@ -61,7 +61,7 @@ StitchLibraryUi::StitchLibraryUi(QWidget* parent)
     ui->listView->setItemDelegate(delegate);
 
     setDialogSize();
-    ui->listView->horizontalHeader()->setClickable(true);
+    ui->listView->horizontalHeader()->setSectionsClickable(true);
     ui->listView->horizontalHeader()->setSortIndicatorShown(true);
 
     //TODO: Wrong Side.

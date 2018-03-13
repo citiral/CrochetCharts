@@ -20,12 +20,12 @@
  \****************************************************************************/
 #include "stitch.h"
 
-#include <QPainter>
-#include <QPixmap>
+#include <QtGui/QPainter>
+#include <QtGui/QPixmap>
 #include <QtSvg/QSvgRenderer>
 
 #include "debug.h"
-#include <QFile>
+#include <QtCore/QFile>
 
 #include "settings.h"
 

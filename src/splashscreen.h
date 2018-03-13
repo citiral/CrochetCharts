@@ -21,7 +21,7 @@
 #ifndef SPLASHSCREEN_H
 #define SPLASHSCREEN_H
 
-#include <QSplashScreen>
+#include <QtWidgets/QSplashScreen>
 
 class SplashScreen : public QSplashScreen
 {

@@ -21,14 +21,14 @@
 #ifndef SCENE_H
 #define SCENE_H
 
-#include <QGraphicsScene>
+#include <QtWidgets/QGraphicsScene>
 
 #include "cell.h"
 #include "ChartImage.h"
 
-#include <QHash>
-#include <QUndoStack>
-#include <QRubberBand>
+#include <QtCore/QHash>
+#include <QtWidgets/QUndoStack>
+#include <QtWidgets/QRubberBand>
 #include <functional>
 
 #include "chartLayer.h"

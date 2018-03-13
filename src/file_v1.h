@@ -23,8 +23,8 @@
 
 #include "file.h"
 
-#include <QXmlStreamReader>
-#include <QXmlStreamWriter>
+#include <QtCore/QXmlStreamReader>
+#include <QtCore/QXmlStreamWriter>
 
 class QDataStream;
 class CrochetTab;

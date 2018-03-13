@@ -21,8 +21,8 @@
 #ifndef TEXTVIEW_H
 #define TEXTVIEW_H
 
-#include <QObject>
-#include <QMap>
+#include <QtGui/QFileOpenEvent>
+#include <QtCore/QMap>
 
 class Scene;
 

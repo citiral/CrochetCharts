@@ -21,8 +21,8 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
-#include <QApplication>
-#include <QStringList>
+#include <QtWidgets/QApplication>
+#include <QtCore/QStringList>
 
 #include "mainwindow.h"
 

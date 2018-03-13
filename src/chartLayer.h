@@ -1,7 +1,7 @@
 #ifndef CHARTLAYER_H
 #define CHARTLAYER_H
 
-#include <QString>
+#include <QtCore/QString>
 
 class ChartLayer
 {

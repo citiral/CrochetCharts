@@ -20,23 +20,23 @@
  \****************************************************************************/
 #include "stitchset.h"
 
-#include <QFile>
-#include <QDir>
+#include <QtCore/QFile>
+#include <QtCore/QDir>
 
-#include <QXmlStreamWriter> //write the xml file
-#include <QXmlStreamReader>
+#include <QtCore/QXmlStreamWriter> //write the xml file
+#include <QtCore/QXmlStreamReader>
 
-#include <QDataStream> //read/write the set file w/icon data.
+#include <QtCore/QDataStream> //read/write the set file w/icon data.
 
 #include "settings.h"
 
-#include <QDebug>
+#include <QtCore/QDebug>
 #include "debug.h"
 
-#include <QFileInfo>
-#include <QSize>
+#include <QtCore/QFileInfo>
+#include <QtCore/QSize>
 
-#include <QMap>
+#include <QtCore/QMap>
 #include "appinfo.h"
 
 StitchSet::StitchSet(QObject* parent, bool isMasterSet)
@@ -636,7 +636,8 @@ void StitchSet::reset()
     foreach(Stitch* s, mStitches)
         s->isBuiltIn = true;
 
-    QAbstractItemModel::reset();
+    beginResetModel();
+    endResetModel();
 }
 
 void StitchSet::reloadStitchIcons()

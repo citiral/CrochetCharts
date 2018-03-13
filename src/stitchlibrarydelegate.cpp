@@ -21,32 +21,32 @@
 #include "stitchlibrarydelegate.h"
 
 #include "stitch.h"
-#include <QPainter>
-#include <QLineEdit>
-#include <QComboBox>
-#include <QPushButton>
+#include <QtGui/QPainter>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QPushButton>
 
-#include <QStyleOption>
-#include <QStyleOptionViewItem>
-#include <QSortFilterProxyModel>
-#include <QModelIndex>
+#include <QtWidgets/QStyleOption>
+#include <QtWidgets/QStyleOptionViewItem>
+#include <QtCore/QSortFilterProxyModel>
+#include <QtCore/QModelIndex>
 
 #include <math.h>
 
-#include <QApplication>
+#include <QtWidgets/QApplication>
 
 #include "settings.h"
-#include <QFileInfo>
-#include <QDir>
+#include <QtCore/QFileInfo>
+#include <QtCore/QDir>
 
 #include "debug.h"
 #include "stitchlibrary.h"
 #include "stitchset.h"
-#include <QSvgRenderer>
-#include <QMessageBox>
-#include <QCheckBox>
+#include <QtSvg/QSvgRenderer>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QCheckBox>
 
-#include <QMouseEvent>
+#include <QtGui/QMouseEvent>
 
 /***************************************************************************************************************/
 static QRect CheckBoxRect(const QStyleOptionViewItem &itemStyleOptions) {

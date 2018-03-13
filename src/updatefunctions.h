@@ -21,7 +21,7 @@
 #ifndef UPDATEFUNCTION_H
 #define UPDATEFUNCTION_H
 
-#include <QString>
+#include <QtCore/QString>
 
 /**
  * This function contains snippets of code that should be run before a new version of the software is

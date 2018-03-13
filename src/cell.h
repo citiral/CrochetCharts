@@ -23,7 +23,7 @@
 
 #include <QtSvg/QGraphicsSvgItem>
 #include "stitch.h"
-#include <QPointer>
+#include <QtCore/QPointer>
 
 class Cell : public QGraphicsSvgItem
 {

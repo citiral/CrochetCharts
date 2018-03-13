@@ -21,7 +21,7 @@
 #ifndef ITEMGROUP_H
 #define ITEMGROUP_H
 
-#include <QGraphicsItemGroup>
+#include <QtWidgets/QGraphicsItemGroup>
 
 class ItemGroup : public QGraphicsItemGroup
 {

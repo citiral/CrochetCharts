@@ -24,7 +24,7 @@
 #include "stitchlibrary.h"
 
 #include "debug.h"
-#include <QMessageBox>
+#include <QtWidgets/QMessageBox>
 
 
 RowEditDialog::RowEditDialog(Scene* scene, TextView* textView, QWidget* parent)

@@ -21,7 +21,7 @@
 #ifndef CHARTVIEW_H
 #define CHARTVIEW_H
 
-#include <QGraphicsView>
+#include <QtWidgets/QGraphicsView>
 
 /**
  * The default view on the ChartScene.

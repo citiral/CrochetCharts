@@ -21,20 +21,20 @@
 #ifndef ERRORHANDLER_H
 #define ERRORHANDLER_H
 
-void errorHandler(QtMsgType type, const char *msg)
+void errorHandler(QtMsgType type, const QMessageLogContext &context, const QString &msg)
 {
     switch (type) {
         case QtDebugMsg:
-            fprintf(stderr, "%s\n", msg);
+            fprintf(stderr, "%s\n", msg.toStdString().c_str());
             break;
         case QtWarningMsg:
-            fprintf(stderr, "\033[1;33mWarning\033[0m: %s\n", msg);
+            fprintf(stderr, "\033[1;33mWarning\033[0m: %s\n", msg.toStdString().c_str());
             break;
         case QtCriticalMsg:
-            fprintf(stderr, "\033[31mCritical\033[0m: %s\n", msg);
+            fprintf(stderr, "\033[31mCritical\033[0m: %s\n", msg.toStdString().c_str());
             break;
         case QtFatalMsg:
-            fprintf(stderr, "\033[31mFatal\033[0m: %s\n", msg);
+            fprintf(stderr, "\033[31mFatal\033[0m: %s\n", msg.toStdString().c_str());
             abort();
     }
 }

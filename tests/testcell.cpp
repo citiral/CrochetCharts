@@ -21,10 +21,10 @@
 #include "testcell.h"
 #include "../src/stitchlibrary.h"
 
-#include <QPainter>
-#include <QFile>
-#include <QCryptographicHash>
-#include <QSvgGenerator>
+#include <QtGui/QPainter>
+#include <QtCore/QFile>
+#include <QtCore/QCryptographicHash>
+#include <QtSvg/QSvgGenerator>
 
 void TestCell::initTestCase()
 {
@@ -106,9 +106,9 @@ void TestCell::setRotation_data()
     QTest::addColumn<qreal>("angle");
     QTest::addColumn<QString>("rasterHash");
 
-    QTest::newRow("ch")    << "ch" << 32.0 << 16.0 << 45.0 << "8bc84f266a6b29c060e99e80cc60f5a4dd1c0db9";
-    QTest::newRow("hdc")   << "hdc" << 32.0 << 64.0 << 45.0 << "4a7eac0d444a5d98f80ed44cd03be3c85ea8f2c1";
-    QTest::newRow("dc")    << "dc" << 32.0 << 80.0 << 45.0 << "26fcac78640d8b5dfe7a350dcfa51f00948e80bb";
+    QTest::newRow("ch")    << "ch" << 32.0 << 16.0 << 45.0 << "7a73f68758c6a7c46bc49a8c5505f4c2eaa839c0";
+    QTest::newRow("hdc")   << "hdc" << 32.0 << 64.0 << 45.0 << "03059e40918d8a26dc8c8e6ea276a210088b4e20";
+    QTest::newRow("dc")    << "dc" << 32.0 << 80.0 << 45.0 << "ab8b44b8047077ac1bcce9b3387df5ff4c8a1293";
 
 }
 
@@ -118,8 +118,7 @@ void TestCell::setScale()
     QFETCH(QString, name);
     QFETCH(qreal, width);
     QFETCH(qreal, height);
-    QFETCH(qreal, scaleX);
-    QFETCH(qreal, scaleY);
+    QFETCH(qreal, scale);
     QFETCH(QString, rasterHash);
 
     Cell* c = new Cell();
@@ -133,7 +132,7 @@ void TestCell::setScale()
 
     QPointF origin = QPointF(c->boundingRect().width()/2, c->boundingRect().height());
     c->setTransformOriginPoint(origin);
-    c->setScale(scaleX, scaleY);
+    c->setScale(scale);
 
     QString rasterImage = "TestCell-ScaleTest-" + QString::number(i) + "-" + name + ".png";
 
@@ -154,13 +153,12 @@ void TestCell::setScale_data()
     QTest::addColumn<QString>("name");
     QTest::addColumn<qreal>("width");
     QTest::addColumn<qreal>("height");
-    QTest::addColumn<qreal>("scaleX");
-    QTest::addColumn<qreal>("scaleY");
+    QTest::addColumn<qreal>("scale");
     QTest::addColumn<QString>("rasterHash");
 
-    QTest::newRow("ch")    << "ch" << 32.0 << 16.0 << 1.0 << 1.0 << "0be6578d22717ba56082a408e8ed128e8114a30c";
-    QTest::newRow("hdc")   << "hdc" << 32.0 << 64.0 << 2.5 << 2.5 << "090bf8ac828e1d2ad0da3ec240539276148bc134";
-    QTest::newRow("dc")    << "dc" << 32.0 << 80.0 << 2.5 << 2.5 << "bdb70eea2145b79c7cb4e50a6148f5ec4d09f708";
+    QTest::newRow("ch")    << "ch" << 32.0 << 16.0 << 1.0 << "dbfacd18635fef7df41086eeccdc37447760a0ed";
+    QTest::newRow("hdc")   << "hdc" << 32.0 << 64.0 << 2.5 << "03fdaa34914ab8e27201ce4a8f8baa9a00b92e90";
+    QTest::newRow("dc")    << "dc" << 32.0 << 80.0 << 2.5 << "c9ac8ea63a4d48e034c8c5dd582774a7ba18586c";
 }
 
 void TestCell::setBgColor()
@@ -206,9 +204,9 @@ void TestCell::setBgColor_data()
     QTest::addColumn<QString>("color");
     QTest::addColumn<QString>("rasterHash");
 
-    QTest::newRow("ch")    << "ch" << 32.0 << 16.0 << "#0000FF" << "9d6c0ac6e51809f662573c9432c0b5c7064c2021";
-    QTest::newRow("hdc")   << "hdc" << 32.0 << 64.0 << "#FF0000" << "c3105395f5d7e6ad8269208d25e8be76ab7a9455";
-    QTest::newRow("dc")    << "dc" << 32.0 << 80.0 << "#00FF00" << "0a4fedb0079e244671ab5a376984f40df3394b94";
+    QTest::newRow("ch")    << "ch" << 32.0 << 16.0 << "#0000FF" << "77ce26028759a0ab5cd4c11ce8283d9176cb62c0";
+    QTest::newRow("hdc")   << "hdc" << 32.0 << 64.0 << "#FF0000" << "9d21520992b236b71915220cd5a1cfbdfa69f459";
+    QTest::newRow("dc")    << "dc" << 32.0 << 80.0 << "#00FF00" << "f530d91d6b475fabba6936c7015ebe1ade4efd7a";
 
 }
 
@@ -219,8 +217,7 @@ void TestCell::setAllProperties()
     QFETCH(qreal, width);
     QFETCH(qreal, height);
     QFETCH(qreal, angle);
-    QFETCH(qreal, scaleX);
-    QFETCH(qreal, scaleY);
+    QFETCH(qreal, scale);
     QFETCH(QString, color);
     QFETCH(QString, rasterHash);
 
@@ -236,7 +233,7 @@ void TestCell::setAllProperties()
     c->setTransformOriginPoint(origin);
     c->setBgColor(QColor(color));
     c->setRotation(angle);
-    c->setScale(scaleX, scaleY);
+    c->setScale(scale);
 
 
     QString rasterImage = "TestCell-AllProperties-" + QString::number(i) + "-" + name + ".png";
@@ -259,17 +256,16 @@ void TestCell::setAllProperties_data()
     QTest::addColumn<qreal>("width");
     QTest::addColumn<qreal>("height");
     QTest::addColumn<qreal>("angle");
-    QTest::addColumn<qreal>("scaleX");
-    QTest::addColumn<qreal>("scaleY");
+    QTest::addColumn<qreal>("scale");
     QTest::addColumn<QString>("color");
     QTest::addColumn<QString>("rasterHash");
 
-    QTest::newRow("ch")    << "ch" << 32.0 << 16.0 << 45.0 << 1.5 << 2.0 << "#0000FF"
-                                    << "2d56f4703b3f29f1163bdd6197597e3018a004e6";
-    QTest::newRow("hdc")   << "hdc" << 32.0 << 64.0 << 45.0 << 1.5 << 2.0 << "#FF0000"
-                                    << "2bffe89a7dad96f18eae2ded0dc08f7f207ceb30";
-    QTest::newRow("dc")    << "dc" << 32.0 << 80.0 << 45.0 << 1.5 << 2.0 << "#00FF00"
-                                    << "0c151d2b0aee5157a59e1ac769bb26644365ced9";
+    QTest::newRow("ch")    << "ch" << 32.0 << 16.0 << 45.0 << 1.5 << "#0000FF"
+                                    << "b15c52e72bfbc5d5c133a30b7e314a88c780a259";
+    QTest::newRow("hdc")   << "hdc" << 32.0 << 64.0 << 45.0 << 1.5 << "#FF0000"
+                                    << "3209b56458c2f7473adf43835dd502832cb93635";
+    QTest::newRow("dc")    << "dc" << 32.0 << 80.0 << 45.0 << 1.5 << "#00FF00"
+                                    << "0095bf007cadd3537b37ff64a11c97449921a874";
 
 }
 

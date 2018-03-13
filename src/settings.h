@@ -21,9 +21,9 @@
 #ifndef SETTINGS_H
 #define SETTINGS_H
 
-#include <QObject>
-#include <QSettings>
-#include <QStringList>
+#include <QtGui/QFileOpenEvent>
+#include <QtCore/QSettings>
+#include <QtCore/QStringList>
 
 class MainWindow;
 

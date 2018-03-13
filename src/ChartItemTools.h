@@ -1,10 +1,10 @@
 #ifndef CHARTITEM_H
 #define CHARTITEM_H
 
-#include <QPointF>
-#include <QGraphicsItem>
-#include <QGraphicsRotation>
-#include <QGraphicsScale>
+#include <QtCore/QPointF>
+#include <QtWidgets/QGraphicsItem>
+#include <QtWidgets/QGraphicsRotation>
+#include <QtWidgets/QGraphicsScale>
 
 /**
  * static helping class to aid in manipulating the transform of graphicsitems

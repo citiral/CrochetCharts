@@ -27,17 +27,19 @@
 #include "itemgroup.h"
 #include "indicator.h"
 #include "ChartImage.h"
-#include <QGraphicsEllipseItem>
+#include <QtWidgets/QGraphicsEllipseItem>
 
 #include "ChartItemTools.h"
 #include "crochettab.h"
 #include "stitchlibrary.h"
 #include "stitch.h"
 #include "colorlistwidget.h"
-#include <qcolordialog.h>
-#include <QFileDialog>
+#include <QtWidgets/qcolordialog.h>
+#include <QtWidgets/QFileDialog>
 
 #include "propertiesdata.h"
+
+#include <cmath>
 
 PropertiesDock::PropertiesDock(QTabWidget *tabWidget, QWidget *parent) :
     QDockWidget(parent),

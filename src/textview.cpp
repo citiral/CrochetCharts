@@ -20,7 +20,7 @@
  \****************************************************************************/
 #include "textview.h"
 
-#include <QDebug>
+#include <QtCore/QDebug>
 #include "settings.h"
 #include "scene.h"
 

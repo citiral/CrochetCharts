@@ -22,7 +22,7 @@
 #include "ui_stitchreplacerui.h"
 
 #include "stitch.h"
-#include <QPushButton>
+#include <QtWidgets/QPushButton>
 #include "stitchlibrary.h"
 
 StitchReplacerUi::StitchReplacerUi(QString stitch, QList< QString > patternStitches, QWidget* parent) :

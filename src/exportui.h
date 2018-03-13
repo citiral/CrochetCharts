@@ -21,10 +21,10 @@
 #ifndef EXPORTUI_H
 #define EXPORTUI_H
 
-#include <QDialog>
-#include <QTabWidget>
-#include <QGraphicsScene>
-#include <QMap>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QGraphicsScene>
+#include <QtCore/QMap>
 #include "legends.h"
 
 namespace Ui {
@@ -101,4 +101,3 @@ private:
 };
 
 #endif //EXPORTUI_H
-

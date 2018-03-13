@@ -21,7 +21,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
+#include <QtWidgets/QMainWindow>
 
 #include "filefactory.h"
 #include "updater.h"
@@ -33,9 +33,9 @@
 #include "mirrordock.h"
 #include "propertiesdock.h"
 
-#include <QSortFilterProxyModel>
+#include <QtCore/QSortFilterProxyModel>
 
-#include <QModelIndex>
+#include <QtCore/QModelIndex>
 
 #include "scene.h"
 

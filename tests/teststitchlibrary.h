@@ -22,7 +22,6 @@
 #define TESTSTITCHLIBRARY_H
 
 #include <QtTest/QTest>
-#include <QObject>
 #include "../src/stitchlibrary.h"
 
 class TestStitchLibrary : public QObject

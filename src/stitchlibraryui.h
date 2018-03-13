@@ -21,9 +21,9 @@
 #ifndef STITCHLIBRARYUI_H
 #define STITCHLIBRARYUI_H
 
-#include <QDialog>
+#include <QtWidgets/QDialog>
 #include "ui_stitchlibrary.h"
-#include <QSortFilterProxyModel>
+#include <QtCore/QSortFilterProxyModel>
 
 class StitchSet;
 

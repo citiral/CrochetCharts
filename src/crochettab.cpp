@@ -21,25 +21,25 @@
 #include "crochettab.h"
 #include "ui_optionsbar.h"
 
-#include <QVBoxLayout>
-#include <QSplitter>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QSplitter>
 
-#include <QPainter>
+#include <QtGui/QPainter>
 
-#include <QXmlStreamWriter>
-#include <QDropEvent>
-#include <QDragEnterEvent>
-#include <QUrl>
+#include <QtCore/QXmlStreamWriter>
+#include <QtGui/QDropEvent>
+#include <QtGui/QDragEnterEvent>
+#include <QtCore/QUrl>
 
-#include <QDebug>
+#include <QtCore/QDebug>
 
 #include "scene.h"
 #include "textview.h"
 
 #include "settings.h"
-#include <QDate>
-#include <QLayout>
-#include <QClipboard>
+#include <QtCore/QDate>
+#include <QtWidgets/QLayout>
+#include <QtGui/QClipboard>
 
 CrochetTab::CrochetTab(Scene::ChartStyle style, int defEditMode, QString defStitch,
                        QColor defFgColor, QColor defBgColor, QWidget* parent)
@@ -469,4 +469,3 @@ void CrochetTab::setGuidelinesType(QString guide)
 {
     mScene->setGuidelinesType(guide);
 }
-

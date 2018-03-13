@@ -21,7 +21,7 @@
 #ifndef ROWEDITDIALOG_H
 #define ROWEDITDIALOG_H
 
-#include <QWidget>
+#include <QtWidgets/QWidget>
 
 #include "scene.h"
 #include "textview.h"

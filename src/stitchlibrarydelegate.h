@@ -21,12 +21,12 @@
 #ifndef STITCHLIBRARYDELEGATE_H
 #define STITCHLIBRARYDELEGATE_H
 
-#include <QStyledItemDelegate>
-#include <QSignalMapper>
-#include <qcoreevent.h>
+#include <QtWidgets/QStyledItemDelegate>
+#include <QtCore/QSignalMapper>
+#include <QtCore/qcoreevent.h>
 
-#include <QComboBox>
-#include <QAbstractItemView>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QAbstractItemView>
 
 class IconComboBox : public QComboBox
 {

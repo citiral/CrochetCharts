@@ -21,7 +21,7 @@
 #ifndef SETTINGSUI_H
 #define SETTINGSUI_H
 
-#include <QDialog>
+#include <QtWidgets/QDialog>
 
 class QAbstractButton;
 class QPixmap;

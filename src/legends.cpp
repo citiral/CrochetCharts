@@ -19,16 +19,16 @@
 
  \****************************************************************************/
 #include "legends.h"
-#include <QPainter>
+#include <QtGui/QPainter>
 
 #include "settings.h"
 
-#include <QDebug>
-#include <QGraphicsScene>
+#include <QtCore/QDebug>
+#include <QtWidgets/QGraphicsScene>
 
 #include "stitchlibrary.h"
 #include "stitch.h"
-#include <QSvgRenderer>
+#include <QtSvg/QSvgRenderer>
 
 #include <math.h>
 
